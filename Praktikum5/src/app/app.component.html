@@ -1,0 +1,146 @@
+<!-- <app-courses></app-courses> -->
+
+<!-- <div *ngIf="courses.length >0">
+  list of courses
+</div>
+<div *ngIf="courses.length == 0">
+    no courses yet
+</div>
+
+<router-outlet> </router-outlet>
+   -->
+   
+   <!-- <Percabangan Kedua> -->
+     <!-- <div *ngIf="courses.length > 0; else noCourses">  
+       list of course
+     </div>
+     <ng-template #noCourses>
+       no courses yet
+     </ng-template>
+
+     <router-outlet></router-outlet> -->
+     
+  <!-- <Percabangan Ketiga> -->
+      <!-- <div *ngIf="courses.length > 0; then coursesList else noCourses"> </div>  
+      <ng-template #noCoursesList> 
+        list of course
+      </ng-template>
+      
+        <ng-template #noCourses>
+          no courses yet
+        </ng-template>
+   
+  <router-outlet></router-outlet> -->
+
+  <!-- <Hidden Property> -->
+    <!-- <div hidden>
+      list courses list
+    </div>
+    <div>
+      no courses yet 
+    </div>
+
+  <router-outlet></router-outlet> -->
+  
+  <!-- <div [hidden]="courses.length == 0">
+    list courses list  
+  </div>
+    <div [hidden]="courses.length > 0">
+      no courses yet 
+    </div>
+
+<router-outlet></router-outlet> -->
+
+  <!-- <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a
+      (click)="viewMode = 'map'"
+      class="nav-link"
+      [class.active]="viewMode == 'map'"
+      >Map View</a>
+    </li>
+
+        <li class="nav-item">
+          <a
+          (click)="viewMode = 'list'" 
+          class="nav-link"
+          [class.active]="viewMode == 'list'"
+          >List View</a>
+        </li>
+      </ul>
+          
+          <div [ngSwitch]="viewMode">
+            <div *ngSwitchCase="'map'">Map View Content</div>
+            <div *ngSwitchCase="'list'">List View Content</div>
+            <div *ngSwitchDefault>Other</div>
+          </div> -->
+<!-- <ul>
+  <li *ngFor="let item of coursesFor; index as i">
+    {{i}}-{{item.name}}
+  </li>
+</ul>
+<router-outlet></router-outlet>  -->
+
+<!-- <ul>
+  <li *ngFor="let item of coursesFor; even as isEven">
+    {{item.name}}
+    <span *ngIf="isEven">(Even)</span>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>  -->
+
+<!-- <button (click)="onAdd()">Add</button>
+<ul>
+  <li *ngFor="let item of coursesFor; even as isEven">
+    {{item.name}}
+    <span *ngIf="isEven">(Even)</span>
+  </li>
+</ul>
+<router-outlet></router-outlet> -->
+
+<!-- <button (click)="onAdd()">Add</button>
+<ul>
+  <li *ngFor="let item of coursesFor; even as isEven">
+    {{item.name}}
+    <span *ngIf="isEven">(Even)</span> -->
+    <!-- <button (click)="onRemove(item)">Remove</button> -->
+    <!-- <button (click)="onChange(item)">update</ button>
+  </li>
+</ul>
+<router-outlet></router-outlet> -->
+
+<!-- <button (click)="loadCourses()">Tampilkan data</button>
+  <li *ngFor="let itemone of coursesForOne">
+    {{itemone.nama}}
+  </li>
+  <router-outlet></router-outlet> -->
+
+  <!-- &nbsp; <button (click)="loadCourses()"> Tampikan data</button>
+  <li *ngFor="let itemone of coursesForOne; TrackBy:trackCourse">
+    {{itemone.nama}}
+  </li>
+ <router-outlet></router-outlet> -->
+
+ <!-- &nbsp;<input type="text" appInputFormat>
+ <router-outlet></router-outlet> -->
+            <!-- Percobaan Custom Directive -->
+ <!-- &nbsp;<input type="text" appInputFormat [format]="'lowercase'">
+ <router-outlet></router-outlet> -->
+
+            <!-- Percobaan Custom Directive -->
+  <!-- &nbsp;<input type="text" appInputFormat [format]="'uppercase'">
+  <router-outlet></router-outlet> -->
+
+            <!-- Percobaan Custom Directive -->
+<!-- &nbsp;<input type="text" appInputFormat [format]="'uppercase'"> -->
+&nbsp;<input type="text" [appInputFormat]="'uppercase'">
+<router-outlet></router-outlet>
+
+
+
+
+
+
+
+        
