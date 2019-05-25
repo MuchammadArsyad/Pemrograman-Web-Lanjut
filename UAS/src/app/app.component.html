@@ -1,0 +1,9 @@
+<div [hidden]= "authService.currentUser() == 1">
+  <app-navbar></app-navbar>
+</div>
+
+<div [hidden] = "authService.currentUser() == 0">
+  <app-mynavbar></app-mynavbar>
+</div>
+
+<router-outlet></router-outlet>
